@@ -9,11 +9,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Applied Machine Learning</title>
+  <title>About</title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://appliedmachinelearning.org/">
+  <link rel="canonical" href="http://appliedmachinelearning.org/about/">
   <link rel="alternate" type="application/rss+xml" title="Applied Machine Learning" href="http://appliedmachinelearning.org/feed.xml">
 </head>
 
@@ -43,10 +43,6 @@
           
         
           
-          <a class="page-link" href="/about/">About</a>
-          
-        
-          
           <a class="page-link" href="/lectures/advanced.html">Advanced topics</a>
           
         
@@ -69,12 +65,6 @@
           
         
           
-        
-          
-        
-          
-        
-          
           <a class="page-link" href="/lectures/interactions.html">Interactions and recommendation systems</a>
           
         
@@ -84,8 +74,6 @@
         
           
           <a class="page-link" href="/lectures/linear_review.html">Review of linear models</a>
-          
-        
           
         
           
@@ -133,108 +121,41 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <h1 id="calendar">Calendar</h1>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<article class="post">
 
-<table>
-  <thead>
-    <tr>
-      <th>Week</th>
-      <th>Date</th>
-      <th>Topic</th>
-      <th>Homework</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>6/23</td>
-      <td><a href="lectures/overview.html">Overview</a>; linear model review</td>
-      <td><a href="lectures/questionnaire.html">Questionnaire</a>, setup environment. Build first model</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>6/30</td>
-      <td>Featurization: numeric, categorical, and text data; Outputs</td>
-      <td>Project 1 assigned</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>7/7</td>
-      <td>Processing raw data; map-reduce and distributed computing; experimental discipline</td>
-      <td>Project 1 check-in</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>7/14</td>
-      <td>Time series</td>
-      <td>Project 1 due; project 2 assigned</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>7/21</td>
-      <td>Metrics; models in production</td>
-      <td>Project 2 check-in</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>7/28</td>
-      <td>Interactions, recommendation systems</td>
-      <td>Project 2 due; project 3 assigned</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>8/4</td>
-      <td>Modeling big data sets</td>
-      <td>Project 3 check-in</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>8/11</td>
-      <td>Model understanding</td>
-      <td>Project 3 due; final project assigned</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>8/18</td>
-      <td>Understanding data with models; probabilistic models</td>
-      <td>Final project check-in</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>8/25</td>
-      <td>Advanced topics</td>
-      <td>Final project due</td>
-    </tr>
-  </tbody>
-</table>
+  <header class="post-header">
+    <h1 class="post-title">About</h1>
+  </header>
 
-<h1 id="interesting-data">Interesting data</h1>
+  <div class="post-content">
+    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="http://jekyllrb.com/">jekyllrb.com</a></p>
 
-<ul>
-  <li><a href="https://www.kaggle.com/benhamner/2016-us-election">Election</a>. Good working example.</li>
-  <li>Climate data. <a href="https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data">On kaggle</a>. See also <a href="http://berkeleyearth.org/data/">Berkeley Earth</a> for temperature time series at various granularities.</li>
-  <li>Health <a href="http://catalog.data.gov/dataset/u-s-chronic-disease-indicators-cdi-ff843">e.g. chronic disease indicators</a>.</li>
-  <li><a href="https://snap.stanford.edu/data/">Social networks and graphs</a>.</li>
-  <li><a href="https://www.kaggle.com/cdc/mortality">Causes of death</a> from the CDC/kaggle. Might
-be useful for model understanding.</li>
-  <li><a href="https://www.kaggle.com/c/shelter-animal-outcomes">Shelter animals</a>. On-going kaggle competition.</li>
-  <li><a href="https://www.kaggle.com/c/facebook-v-predicting-check-ins">Facebook location check-ins</a>. Good example
-for the challenge of targets. Also has a temporality challenge.</li>
-  <li><a href="http://www.gutenberg.org">Project Gutenberg</a>. Text of many books (e.g. Ulysses); great for text
-classification.</li>
-  <li>
-    <p>Sports: nfl, nba, mlb.</p>
-  </li>
-  <li>Generic data sites:
-    <ul>
-      <li>Kaggle</li>
-      <li>Census</li>
-      <li><a href="www.data.gov">data.gov</a></li>
-    </ul>
-  </li>
-  <li><a href="http://archive.ics.uci.edu/ml/datasets/Bag+of+Words">Misc text</a></li>
-</ul>
+<p>You can find the source code for the Jekyll new theme at:
+<a href="https://github.com/jglovier"><span class="icon icon--github"><svg viewbox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"></path></svg>
+</span><span class="username">jglovier</span></a>
+ /
+<a href="https://github.com/jglovier/jekyll-new">jekyll-new</a></p>
 
+<p>You can find the source code for Jekyll at
+<a href="https://github.com/jekyll"><span class="icon icon--github"><svg viewbox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"></path></svg>
+</span><span class="username">jekyll</span></a>
+ /
+<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+
+  </div>
+
+</article>
 
       </div>
     </div>
@@ -248,8 +169,8 @@ classification.</li>
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>Applied Machine Learning</li>
-          <li>UW PCE</li>
-          <li>Lawrence Cayton - <a href="mailto:lcayton@uw.edu">lcayton@uw.edu</a></li>
+          <li>Lawrence Cayton</li>
+          <li><a href="mailto:lcayton@uw.edu">lcayton@uw.edu</a></li>
 
         </ul>
       </div>

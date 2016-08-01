@@ -9,11 +9,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Applied Machine Learning</title>
+  <title>Questionnaire</title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://appliedmachinelearning.org/">
+  <link rel="canonical" href="http://appliedmachinelearning.org/lectures/questionnaire.html">
   <link rel="alternate" type="application/rss+xml" title="Applied Machine Learning" href="http://appliedmachinelearning.org/feed.xml">
 </head>
 
@@ -43,10 +43,6 @@
           
         
           
-          <a class="page-link" href="/about/">About</a>
-          
-        
-          
           <a class="page-link" href="/lectures/advanced.html">Advanced topics</a>
           
         
@@ -69,12 +65,6 @@
           
         
           
-        
-          
-        
-          
-        
-          
           <a class="page-link" href="/lectures/interactions.html">Interactions and recommendation systems</a>
           
         
@@ -84,8 +74,6 @@
         
           
           <a class="page-link" href="/lectures/linear_review.html">Review of linear models</a>
-          
-        
           
         
           
@@ -133,108 +121,36 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <h1 id="calendar">Calendar</h1>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<article class="post">
 
-<table>
-  <thead>
-    <tr>
-      <th>Week</th>
-      <th>Date</th>
-      <th>Topic</th>
-      <th>Homework</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>6/23</td>
-      <td><a href="lectures/overview.html">Overview</a>; linear model review</td>
-      <td><a href="lectures/questionnaire.html">Questionnaire</a>, setup environment. Build first model</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>6/30</td>
-      <td>Featurization: numeric, categorical, and text data; Outputs</td>
-      <td>Project 1 assigned</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>7/7</td>
-      <td>Processing raw data; map-reduce and distributed computing; experimental discipline</td>
-      <td>Project 1 check-in</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>7/14</td>
-      <td>Time series</td>
-      <td>Project 1 due; project 2 assigned</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>7/21</td>
-      <td>Metrics; models in production</td>
-      <td>Project 2 check-in</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>7/28</td>
-      <td>Interactions, recommendation systems</td>
-      <td>Project 2 due; project 3 assigned</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>8/4</td>
-      <td>Modeling big data sets</td>
-      <td>Project 3 check-in</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>8/11</td>
-      <td>Model understanding</td>
-      <td>Project 3 due; final project assigned</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>8/18</td>
-      <td>Understanding data with models; probabilistic models</td>
-      <td>Final project check-in</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>8/25</td>
-      <td>Advanced topics</td>
-      <td>Final project due</td>
-    </tr>
-  </tbody>
-</table>
+  <header class="post-header">
+    <h1 class="post-title">Questionnaire</h1>
+  </header>
 
-<h1 id="interesting-data">Interesting data</h1>
+  <div class="post-content">
+    <ol>
+  <li>What type of work are you interested in doing after completing the machine learning series?</li>
+  <li>What made you interested in machine learning?</li>
+  <li>What do you work as now (or in recent the past)?</li>
+  <li>Is there any topic you are particularly exited to learn about?</li>
+  <li>What types of data are you interested in modeling?</li>
+  <li>Anything else you’d like to share?</li>
+</ol>
 
-<ul>
-  <li><a href="https://www.kaggle.com/benhamner/2016-us-election">Election</a>. Good working example.</li>
-  <li>Climate data. <a href="https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data">On kaggle</a>. See also <a href="http://berkeleyearth.org/data/">Berkeley Earth</a> for temperature time series at various granularities.</li>
-  <li>Health <a href="http://catalog.data.gov/dataset/u-s-chronic-disease-indicators-cdi-ff843">e.g. chronic disease indicators</a>.</li>
-  <li><a href="https://snap.stanford.edu/data/">Social networks and graphs</a>.</li>
-  <li><a href="https://www.kaggle.com/cdc/mortality">Causes of death</a> from the CDC/kaggle. Might
-be useful for model understanding.</li>
-  <li><a href="https://www.kaggle.com/c/shelter-animal-outcomes">Shelter animals</a>. On-going kaggle competition.</li>
-  <li><a href="https://www.kaggle.com/c/facebook-v-predicting-check-ins">Facebook location check-ins</a>. Good example
-for the challenge of targets. Also has a temporality challenge.</li>
-  <li><a href="http://www.gutenberg.org">Project Gutenberg</a>. Text of many books (e.g. Ulysses); great for text
-classification.</li>
-  <li>
-    <p>Sports: nfl, nba, mlb.</p>
-  </li>
-  <li>Generic data sites:
-    <ul>
-      <li>Kaggle</li>
-      <li>Census</li>
-      <li><a href="www.data.gov">data.gov</a></li>
-    </ul>
-  </li>
-  <li><a href="http://archive.ics.uci.edu/ml/datasets/Bag+of+Words">Misc text</a></li>
-</ul>
+  </div>
 
+</article>
 
       </div>
     </div>
@@ -248,8 +164,8 @@ classification.</li>
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>Applied Machine Learning</li>
-          <li>UW PCE</li>
-          <li>Lawrence Cayton - <a href="mailto:lcayton@uw.edu">lcayton@uw.edu</a></li>
+          <li>Lawrence Cayton</li>
+          <li><a href="mailto:lcayton@uw.edu">lcayton@uw.edu</a></li>
 
         </ul>
       </div>

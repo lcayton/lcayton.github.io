@@ -9,11 +9,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Applied Machine Learning</title>
+  <title>Overview</title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://appliedmachinelearning.org/">
+  <link rel="canonical" href="http://appliedmachinelearning.org/lectures/overview.html">
   <link rel="alternate" type="application/rss+xml" title="Applied Machine Learning" href="http://appliedmachinelearning.org/feed.xml">
 </head>
 
@@ -43,10 +43,6 @@
           
         
           
-          <a class="page-link" href="/about/">About</a>
-          
-        
-          
           <a class="page-link" href="/lectures/advanced.html">Advanced topics</a>
           
         
@@ -69,12 +65,6 @@
           
         
           
-        
-          
-        
-          
-        
-          
           <a class="page-link" href="/lectures/interactions.html">Interactions and recommendation systems</a>
           
         
@@ -84,8 +74,6 @@
         
           
           <a class="page-link" href="/lectures/linear_review.html">Review of linear models</a>
-          
-        
           
         
           
@@ -133,108 +121,100 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <h1 id="calendar">Calendar</h1>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Overview</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="whats-this-course-about">What’s this course about?</h1>
+
+<p><em>Gettting from raw data to useful models.</em></p>
+
+<h1 id="administrative">Administrative</h1>
+
+<p><em>Computer setup:</em> Use whatever programming language you wish. Recommended: python, R.
+You are responsible for setting up your programming environment. It may be useful to
+use AWS, especially f you wish to experiment with a distributed computation environment
+(eg Spark) or GPUs.</p>
+
+<p><em>Format:</em> Course time will be a mix of lecture, discussion (usually in small groups),
+and hands-on time. Students should be prepared to work at a computer and to
+interact. Remote students should make sure they have a working microphone and camera.</p>
+
+<p><em>Homework:</em> Homework will be mostly projects. You will be expected to download data,
+ready it, and build models on it. You will turn-in either a report or give a short
+presentation in class. Some projects may be more development-focused. Additionally,
+you must give feedback on every lecture: two items, can be negative or positive or
+one of each. What works for you? What did you find interesting? What was confusing? What
+was awkward? What was unclear?</p>
+
+<p><em>Textbook:</em>
+We will not follow a textbook closely, but there will be some readings from the following:</p>
 
 <table>
   <thead>
     <tr>
-      <th>Week</th>
-      <th>Date</th>
-      <th>Topic</th>
-      <th>Homework</th>
+      <th>Abbreviation</th>
+      <th>Title</th>
+      <th>Authors</th>
+      <th>Link</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>1</td>
-      <td>6/23</td>
-      <td><a href="lectures/overview.html">Overview</a>; linear model review</td>
-      <td><a href="lectures/questionnaire.html">Questionnaire</a>, setup environment. Build first model</td>
+      <td>ESL</td>
+      <td>Elements of Statistical Learning, 2nd ed</td>
+      <td>Hastie, Tibshirani, Friedman</td>
+      <td><a href="http://statweb.stanford.edu/~tibs/ElemStatLearn/">here</a></td>
     </tr>
     <tr>
-      <td>2</td>
-      <td>6/30</td>
-      <td>Featurization: numeric, categorical, and text data; Outputs</td>
-      <td>Project 1 assigned</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>7/7</td>
-      <td>Processing raw data; map-reduce and distributed computing; experimental discipline</td>
-      <td>Project 1 check-in</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>7/14</td>
-      <td>Time series</td>
-      <td>Project 1 due; project 2 assigned</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>7/21</td>
-      <td>Metrics; models in production</td>
-      <td>Project 2 check-in</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>7/28</td>
-      <td>Interactions, recommendation systems</td>
-      <td>Project 2 due; project 3 assigned</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>8/4</td>
-      <td>Modeling big data sets</td>
-      <td>Project 3 check-in</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>8/11</td>
-      <td>Model understanding</td>
-      <td>Project 3 due; final project assigned</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>8/18</td>
-      <td>Understanding data with models; probabilistic models</td>
-      <td>Final project check-in</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>8/25</td>
-      <td>Advanced topics</td>
-      <td>Final project due</td>
+      <td>MMD</td>
+      <td>Mining of Massive Datsets, 2nd ed</td>
+      <td>Leskovec, Rajaraman, Ullman</td>
+      <td><a href="http://www.mmds.org/">here</a></td>
     </tr>
   </tbody>
 </table>
 
-<h1 id="interesting-data">Interesting data</h1>
+<p><em>Modeling and software packages:</em>
+There are many types of statistical models and many software packages to fit them. This
+course is not based on around any one (though linear models, decision trees, and neural
+networks will often be used for discussion). I recommend working with whatever interests
+you and trying more than one.</p>
+
+<h1 id="about-you">About you</h1>
+
+<p>Please fill out a <a href="questionnaire.html">questionnaire</a></p>
+
+<h1 id="data-science-principles">Data science principles</h1>
 
 <ul>
-  <li><a href="https://www.kaggle.com/benhamner/2016-us-election">Election</a>. Good working example.</li>
-  <li>Climate data. <a href="https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data">On kaggle</a>. See also <a href="http://berkeleyearth.org/data/">Berkeley Earth</a> for temperature time series at various granularities.</li>
-  <li>Health <a href="http://catalog.data.gov/dataset/u-s-chronic-disease-indicators-cdi-ff843">e.g. chronic disease indicators</a>.</li>
-  <li><a href="https://snap.stanford.edu/data/">Social networks and graphs</a>.</li>
-  <li><a href="https://www.kaggle.com/cdc/mortality">Causes of death</a> from the CDC/kaggle. Might
-be useful for model understanding.</li>
-  <li><a href="https://www.kaggle.com/c/shelter-animal-outcomes">Shelter animals</a>. On-going kaggle competition.</li>
-  <li><a href="https://www.kaggle.com/c/facebook-v-predicting-check-ins">Facebook location check-ins</a>. Good example
-for the challenge of targets. Also has a temporality challenge.</li>
-  <li><a href="http://www.gutenberg.org">Project Gutenberg</a>. Text of many books (e.g. Ulysses); great for text
-classification.</li>
-  <li>
-    <p>Sports: nfl, nba, mlb.</p>
-  </li>
-  <li>Generic data sites:
-    <ul>
-      <li>Kaggle</li>
-      <li>Census</li>
-      <li><a href="www.data.gov">data.gov</a></li>
-    </ul>
-  </li>
-  <li><a href="http://archive.ics.uci.edu/ml/datasets/Bag+of+Words">Misc text</a></li>
+  <li>Always start simple, establish baselines.</li>
+  <li>Work iteratively: diagnose a weakness; come up with an improvement; implement it; test it; repeat.</li>
+  <li>Organize and automate entire data science pipeline. Avoid one-off attempts to improve model by, e.g., tweaking a hyperparameter.</li>
+  <li>More technology != better solution.</li>
+  <li>Big data != useful data.</li>
+  <li>Careful with overfitting</li>
+  <li>Don’t fool yourself: confirmation bias, statistical significance.</li>
 </ul>
 
+
+  </div>
+
+</article>
 
       </div>
     </div>
@@ -248,8 +228,8 @@ classification.</li>
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>Applied Machine Learning</li>
-          <li>UW PCE</li>
-          <li>Lawrence Cayton - <a href="mailto:lcayton@uw.edu">lcayton@uw.edu</a></li>
+          <li>Lawrence Cayton</li>
+          <li><a href="mailto:lcayton@uw.edu">lcayton@uw.edu</a></li>
 
         </ul>
       </div>
