@@ -1,0 +1,78 @@
+<html>
+<title>Lawrence Cayton: code </title>
+<head>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+<body>
+
+<div id="everything">
+    <div id="header">
+      <h1>Lawrence Cayton : code</h1>
+      <hr />
+    </div>
+    
+    <div id="nav">
+      <h3><a href="index.html">About</a></h3>
+      <h3><a href="papers.html">Papers</a></h3>
+      <h3><a href="code.html">Code</a></h3>
+    </div>
+
+
+    <div id="main">
+<p>
+All of my code is available on <a href="http://github.com/lcayton">github</a>.
+<p>
+<h2>Random ball cover (RBC) - GPU</h2>
+<p>[<a href="https://github.com/lcayton/RandomBallCover-GPU/archive/master.zip">version
+  0.2.6</a>, <a href="readmeRBC.txt">readme</a>], Oct
+  2011. (Original release: August 2010)
+<p>The RBC is a simple geometric data structure for fast nearest
+  neighbor search in metric spaces that is provably sensitive
+  to <i>intrinsic</i> dimensionality.  Because of its design, the data
+  structure can make use of the power of parallel systems, like
+  GPUs. The <a href="rbc-adms-talk.pdf">slides</a> from 
+  the ADMS talk provide a simple overview of the data structure; see
+  my <a href="papers.html">papers</a> (in particular, <i>Accelerating
+  nearest neighbor search on manycore systems</i>) for a more
+  complete, rigorous description.  
+  
+<p>This is a C and CUDA implementation of the RBC.  It builds the data
+  structure and finds nearest neighbors on a (nvidia) GPU.
+  Modern GPUs provide strong nearest neighbor performance even
+  without a data   structure; hence the RBC as implemented here
+  improves over a high baseline.  In addition to the basic RBC
+  implementation, the code contains fast brute force kernels, and
+  supports k-NN search via efficient sorting networks.
+  
+<p>Version 0.2.6 contains a simplified driver, various cleanups,  and
+  a few minor bug fixes.  See the versions file in the archive
+  or the <a href="http://github.com/lcayton/RandomBallCover-GPU">git repository</a> for the full development history. 
+  
+
+  <p><h2>Random ball cover - multicore CPU</h2>
+  <p>[<a href="https://github.com/lcayton/RandomBallCover-CPU/archive/master.zip">version
+  0.1.1</a>, <a href="readmeCRBC.txt">readme</a>], June 2011. (Original
+  Release: April 2011)
+  <p>This is a multicore CPU implementation of the approximate and exact
+  nearest neighbor search algorithms based on the RBC.  It has been
+  tested on a variety of machines, ranging from a simple dual-core Mac
+  laptop to a 48-core AMD server machine.  
+    
+    <p>The implementation is written in C and parallelized with OpenMP.
+    
+    <p> Version 0.1.1 is a minor bugfix.
+      
+  <p>
+  <h2>Bregman ball tree (bbtree)</h2>
+  <p>[<a href="https://github.com/lcayton/bbtree/archive/master.zip">code</a>, <a href="readme.txt">readme</a>], March 2008.  
+    <p>The bbtree is a data structure for fast nearest neighbor
+    retrieval when <i>nearest</i> is measured not using a metric, but
+    with relative entropy (KL-divergence) or another Bregman
+    divergence.  See my ICML 2008 paper for more information on this
+    data structure.
+
+</div>
+</div>
+</body>
+</html>
+
