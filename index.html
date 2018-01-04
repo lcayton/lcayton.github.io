@@ -1,283 +1,63 @@
-<!DOCTYPE html>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 <html>
-
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Applied Machine Learning</title>
-  <meta name="description" content="">
-
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://appliedmachinelearning.org/">
-  <link rel="alternate" type="application/rss+xml" title="Applied Machine Learning" href="http://appliedmachinelearning.org/feed.xml">
+<title>Lawrence Cayton </title>
+<head>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
 </head>
+<body>
+  <div id="everything">
 
-
-  <body>
-
-    <header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="/">Applied Machine Learning</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-<!--
-        
-          
-          <a class="page-link" href="/about/">About</a>
-          
-        
-          
-          <a class="page-link" href="/about/">About</a>
-          
-        
-          
-          <a class="page-link" href="/lectures/advanced.html">Advanced topics</a>
-          
-        
-          
-          <a class="page-link" href="/lectures/bigdata.html">Big data</a>
-          
-        
-          
-          <a class="page-link" href="/lectures/etl.html">Raw data processing</a>
-          
-        
-          
-          <a class="page-link" href="/lectures/featurize.html">Featurization</a>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-          <a class="page-link" href="/lectures/interactions.html">Interactions and recommendation systems</a>
-          
-        
-          
-          <a class="page-link" href="/lectures/lec5.html">Metrics, confidence, getting into production</a>
-          
-        
-          
-          <a class="page-link" href="/lectures/linear_review.html">Review of linear models</a>
-          
-        
-          
-        
-          
-        
-          
-          <a class="page-link" href="/lectures/modelunderstand.html">Understanding and improving models</a>
-          
-        
-          
-          <a class="page-link" href="/lectures/other.html">Misc</a>
-          
-        
-          
-          <a class="page-link" href="/lectures/outputs.html">Outputs</a>
-          
-        
-          
-          <a class="page-link" href="/lcayton.github.io/lectures/overview.html">Overview</a>
-          
-        
-          
-          <a class="page-link" href="/lectures/overview.html">Overview</a>
-          
-        
-          
-          <a class="page-link" href="/lectures/prod.html">Metrics, confidence, getting into production</a>
-          
-        
-          
-          <a class="page-link" href="/lectures/questionnaire.html">Questionnaire</a>
-          
-        
-          
-          <a class="page-link" href="/lectures/software.html">ML software development</a>
-          
-        
-          
-          <a class="page-link" href="/lectures/timeseries.html">Time series</a>
-          
-        
--->
-      </div>
-    </nav>
-
-  </div>
-
-</header>
-
-
-    <div class="page-content">
-      <div class="wrapper">
-        <p><em>Please visit the <a href="http://canvas.uw.edu">UW Canvas</a> page for the full course site</em></p>
-
-<h1 id="calendar">Calendar</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Week</th>
-      <th>Date</th>
-      <th>Topic</th>
-      <th>Projects</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>6/23</td>
-      <td><a href="lectures/overview.html">Overview</a>; linear model review</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>6/30</td>
-      <td>Featurization: numeric, categorical, and text data; Outputs</td>
-      <td>Project 1 proposal due</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>7/14</td>
-      <td>Time series</td>
-      <td>Project 1 check-in due</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>7/7</td>
-      <td>Processing raw data; map-reduce and distributed computing; experimental discipline</td>
-      <td>Project 1 due</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>7/21</td>
-      <td>Interactions, recommendation systems</td>
-      <td>Project 2 proposal due</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>7/28</td>
-      <td>Metrics; models in production</td>
-      <td>Project 2 check-in due</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>8/4</td>
-      <td>Modeling big data sets</td>
-      <td>Project 2 due</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>8/11</td>
-      <td>Model understanding</td>
-      <td>Project 3 proposal due</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>8/18</td>
-      <td>Understanding data with models; anomaly detection</td>
-      <td>Project 3 check-in due</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>8/25</td>
-      <td>Nearest neighbor search; featurizing graphs</td>
-      <td>Project 3 due</td>
-    </tr>
-  </tbody>
-</table>
-
-<h1 id="interesting-data">Interesting data</h1>
-
-<ul>
-  <li><a href="https://www.kaggle.com/benhamner/2016-us-election">Election</a>. Good working example.</li>
-  <li>Climate data. <a href="https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data">On kaggle</a>. See also <a href="http://berkeleyearth.org/data/">Berkeley Earth</a> for temperature time series at various granularities.</li>
-  <li>Health <a href="http://catalog.data.gov/dataset/u-s-chronic-disease-indicators-cdi-ff843">e.g. chronic disease indicators</a>.</li>
-  <li><a href="https://snap.stanford.edu/data/">Social networks and graphs</a>.</li>
-  <li><a href="https://www.kaggle.com/cdc/mortality">Causes of death</a> from the CDC/kaggle. Might
-be useful for model understanding.</li>
-  <li><a href="https://www.kaggle.com/c/shelter-animal-outcomes">Shelter animals</a>. On-going kaggle competition.</li>
-  <li><a href="https://www.kaggle.com/c/facebook-v-predicting-check-ins">Facebook location check-ins</a>. Good example
-for the challenge of targets. Also has a temporality challenge.</li>
-  <li><a href="http://www.gutenberg.org">Project Gutenberg</a>. Text of many books (e.g. Ulysses); great for text
-classification.</li>
-  <li>
-    <p>Sports: <a href="http://www.pro-football-reference.com/">nfl</a>, <a href="http://www.basketball-reference.com/">nba</a>, <a href="http://www.baseball-reference.com/">mlb</a>.</p>
-  </li>
-  <li>Generic data sites:
-    <ul>
-      <li><a href="http://kaggle.com">kaggle</a></li>
-      <li><a href="https://www.census.gov/">Census</a></li>
-      <li><a href="http://www.data.gov">data.gov</a></li>
-    </ul>
-  </li>
-  <li><a href="http://archive.ics.uci.edu/ml/datasets/Bag+of+Words">Misc text</a></li>
-</ul>
-
-
-      </div>
-    </div>
-
-    <footer class="site-footer">
-
-  <div class="wrapper">
-
+    <div id="header">
+      <h1>Lawrence Cayton</h1>
+      <hr />
+    </div> 
     
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>Applied Machine Learning</li>
-          <li>UW PCE</li>
-          <li>Lawrence Cayton - <a href="mailto:work@lcayton.com">work@lcayton.com</a></li>
-
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          
-
-          
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p></p>
-      </div>
+    <div id="nav">
+      <h3><a href="index.html">About</a></h3>
+      <h3><a href="papers.html">Papers</a></h3>
+      <h3><a href="code.html">Code</a></h3>
     </div>
 
-  </div>
+    <div id="main">
+<p> 
+<b>email:</b> lcayton circle-a gmail.com <br>
 
-</footer>
+<p>I currently work as a machine learning engineer and scientist in the Seattle area. I was formerly a research scientist in
+  the <a href="http://www.kyb.tuebingen.mpg.de/research/dep/bs.html">Empirical 
+Inference Department</a> of the <a href="http://www.kyb.tuebingen.mpg.de/">
+Max Planck Institute for Intelligent Systems</a> (formerly Biological
+  Cybernetics).  I did my PhD at the University of California, San
+  Diego, where I was advised
+  by <a href="http://cseweb.ucsd.edu/~dasgupta/">Sanjoy Dasgupta</a>. 
 
+<p>I work on machine learning, information retrieval, and
+  high-performance computation.  As an academic, much 
+  of my research was focused on accelerating
+  nearest neighbor computation.  Perhaps of interest is
+  my <a href="code.html">code</a> for fast nearest neighbor search on
+  a GPU or multicore CPU. 
 
-  </body>
+<p>In summer 2016, I taught a course on <a href="appliedml/">Applied Machine Learning</a>.
 
+<!--
+<p> Official MPI
+  page <a href="http://www.kyb.tuebingen.mpg.de/~lcayton">here</a>.
+<p> Check out the <a href="http://lccc.eecs.berkeley.edu/">Learning on
+  Cores, Clusters, and Clouds workshop</a> at NIPS 2010.
+-->
+
+<!--
+<h4>Teaching</h4>
+
+<ul class="none">
+<li><a href="http://www.cse.ucsd.edu/classes/su07/cse20">cse20 - Discrete
+mathematics</a> (summer 2007)
+</ul>
+-->
+    </div>
+    </div>
+
+</body>
 </html>
+
+
+
